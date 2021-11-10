@@ -35,7 +35,9 @@ The <tt>KPRINT</tt> macro saves registers
 <tt>X1</tt>, 
 <tt>X2</tt>, 
 <tt>X16</tt> and
-<tt>LR</tt> on the stack beforing invoking the write system call.
+<tt>LR</tt> on the stack first and restores them at the end.
+It uses the write system call to print the string &mdash;
+you can easily change it to work on, e.g., Linux.
 </p>
 <p>
 The code is in public domain.
