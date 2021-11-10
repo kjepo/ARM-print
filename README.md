@@ -1,12 +1,12 @@
 # ARM-print
 <b>Note:</b> This is written for ARM (M1) assembly on Mac OS X.
 <p>
-  The file <tt>print.h</tt> define a macro to make it easier
+  The file <tt>kprint.s</tt> define a macro to make it easier
   to print a string from assembler.
 </p>
 The file <tt>printdemo.s</tt> shows an example:
 <pre>
-  #include "print.h"
+  #include "kprint.s"
   KPRINT "hello, world\n"
   KPRINT "goodbye cruel world\n"
 </pre>
@@ -18,7 +18,7 @@ hello, world
 goodbye cruel world
 </pre>
 <p>
-  Note that <tt>KPRINT</tt> defines a 0-terminated string in the
+  Note that <tt>KPRINT</tt> defines the string in the
   text-segment (not in the data segment).  The implications are:
 </p>
 <ol>

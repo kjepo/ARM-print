@@ -1,4 +1,4 @@
-#include "print.h"
+#include "kprint.s"
 
         .text
         .global _main
