@@ -47,7 +47,7 @@ The file <tt>printdemo.s</tt> shows an example:
     create the string using a local label, or one generated with
     the <tt>\@</tt> feature.</li>
   <li> Create <tt>printf</tt>-style macros for printing out register
-    values in the string.<li>
+    values in the string.</li>
 </ul>
 <p>
   The code is in public domain.
