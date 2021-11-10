@@ -25,6 +25,9 @@ the ARM processor will start executing the string!</li>
 <li> Since the string is in the text-segment, it is read only.</li>
 </ol>
 <p>
+The output is (no prizes for guessing) <tt>hello, world</tt>
+</p>
+<p>
 The <tt>KPRINT</tt> macro saves registers
 <tt>X0</tt>, 
 <tt>X1</tt>, 
