@@ -40,5 +40,15 @@ It uses the write system call to print the string &mdash;
 you can easily change it to work on, e.g., Linux.
 </p>
 <p>
+Possible extensions of this macro are
+</p>
+<ol>
+<li> Let <tt>KPRINT</tt>
+     create the string using a local label, or one generated with
+     the <tt>\@</tt> feature.</li>
+<li> Create printf-style macros for printing out register
+     values in the string.<li>
+</ol>
+<p>
 The code is in public domain.
 </p>
