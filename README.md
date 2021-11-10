@@ -1,10 +1,12 @@
 # ARM-print
 <b>Note:</b> This is written for ARM (M1) assembly on Mac OS X.
 <p>
-  The file <tt>kprint.s</tt> define a macro to make it easier
+  The file <tt>kprint.s</tt> defines a macro to make it easier
   to print a string from assembler.
 </p>
+<p>
 The file <tt>printdemo.s</tt> shows an example:
+</p>
 <pre>
   #include "kprint.s"
   KPRINT "hello, world\n"
