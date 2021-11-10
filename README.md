@@ -8,6 +8,7 @@ The file <tt>printdemo.s</tt> shows an example:
 <pre>
   #include "print.h"
   KPRINT "hello, world\n"
+  KPRINT "goodbye cruel world\n"
 </pre>
 <p>
   The output is:
