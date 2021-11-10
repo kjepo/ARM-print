@@ -1,5 +1,5 @@
 # ARM-print
-<b>Note:</b>This is written for ARM (M1) assembly on Mac OS X.
+<b>Note:</b> This is written for ARM (M1) assembly on Mac OS X.
 <p>
 The file <tt>print.h</tt> defines two macros to make it easier
 to print a string from assembler.
@@ -7,10 +7,10 @@ to print a string from assembler.
 The file <tt>printdemo.s</tt> shows an example:
 <pre>
 #include "print.h"
-
 	KPRINT hello
 	B _exit
 	KSTRING hello, "hello, world\n"
+_exit:
 </pre>
 Note that <tt>KSTRING</tt> defines a 0-terminated string in the
 text-segment (not in the data segment).  The implications are:
