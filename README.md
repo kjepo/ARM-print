@@ -21,9 +21,17 @@ is customary in Mac OS X.</li>
 <li> The string sits in the text-segment so you should either place
 it between subroutines, or at the end of the text-segment, or
 (as in the example) branch around it.  If you omit the branch statement,
-the ARM processor will start executing the string.</li>
+the ARM processor will start executing the string!</li>
 <li> Since the string is in the text-segment, it is read only.</li>
 </ol>
+<p>
+The <tt>KPRINT</tt> macro saves registers
+<tt>X0</tt>, 
+<tt>X1</tt>, 
+<tt>X2</tt>, 
+<tt>X16</tt> and
+<tt>LR</tt> on the stack beforing invoking the write system call.
+</p>
 <p>
 The code is in public domain.
 </p>
