@@ -42,13 +42,13 @@ The file <tt>printdemo.s</tt> shows an example:
 <p>
   Possible extensions of this macro are
 </p>
-<ol>
+<ul>
   <li> Let <tt>KPRINT</tt>
     create the string using a local label, or one generated with
     the <tt>\@</tt> feature.</li>
   <li> Create <tt>printf</tt>-style macros for printing out register
     values in the string.<li>
-</ol>
+</ul>
 <p>
   The code is in public domain.
 </p>
