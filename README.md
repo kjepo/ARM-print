@@ -12,8 +12,13 @@ The file <tt>printdemo.s</tt> shows an example:
 	KSTRING hello, "hello, world\n"
 _exit:
 </pre>
+<p>
+The output is (no prizes for guessing) <tt>hello, world</tt>
+</p>
+<p>
 Note that <tt>KSTRING</tt> defines a 0-terminated string in the
 text-segment (not in the data segment).  The implications are:
+</p>
 <ol>
 <li> The <tt>KPRINT</tt> macro can load the address for the string
 with <tt>ADR</tt> rather than in two steps with page/offset as
@@ -24,9 +29,6 @@ it between subroutines, or at the end of the text-segment, or
 the ARM processor will start executing the string!</li>
 <li> Since the string is in the text-segment, it is read only.</li>
 </ol>
-<p>
-The output is (no prizes for guessing) <tt>hello, world</tt>
-</p>
 <p>
 The <tt>KPRINT</tt> macro saves registers
 <tt>X0</tt>, 
