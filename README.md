@@ -13,7 +13,7 @@ The file <tt>printdemo.s</tt> shows an example:
   The output is (no prizes for guessing) <tt>hello, world</tt>
 </p>
 <p>
-  Note that <tt>KSTRING</tt> defines a 0-terminated string in the
+  Note that <tt>KPRINT</tt> defines a 0-terminated string in the
   text-segment (not in the data segment).  The implications are:
 </p>
 <ol>
