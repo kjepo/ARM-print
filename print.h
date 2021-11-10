@@ -12,6 +12,7 @@ str\@:
         CMP W1, #0
         B.NE 3b
         SUB X2, X0, X2          // len
+        SUB X2, X2, #1
         ADR X1, str\@
         MOV X16, #4             // write
         MOV X0, #1              // stdin

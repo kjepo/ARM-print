@@ -4,6 +4,7 @@
         .global _main
 _main:  
         KPRINT "hello, world\n"
+	KPRINT "goodbye cruel world\n"
         
         // exit
         MOV   X0, #0                    

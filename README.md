@@ -10,8 +10,12 @@ The file <tt>printdemo.s</tt> shows an example:
   KPRINT "hello, world\n"
 </pre>
 <p>
-  The output is (no prizes for guessing) <tt>hello, world</tt>
+  The output is:
 </p>
+<pre>
+hello, world
+goodbye cruel world
+</pre>
 <p>
   Note that <tt>KPRINT</tt> defines a 0-terminated string in the
   text-segment (not in the data segment).  The implications are:
